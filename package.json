@@ -1,6 +1,6 @@
 {
   "name": "yourfightsite-cms-bootstrap",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Bootstrap 3-based starter kit for Your Fight Site CMS themes.",
   "main": "src/theme.scss",
   "scripts": {
@@ -16,10 +16,5 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.1.1"
-  },
-  "peerDependencies": {
-    "gulp": "3.x",
-    "laravel-elixir": "6.x",
-    "laravel-elixir-webpack-official": "1.x"
   }
 }

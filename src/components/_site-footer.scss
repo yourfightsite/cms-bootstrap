@@ -1,0 +1,22 @@
+.site-footer {
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed;
+
+  .copyright,
+  .credit {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .copyright {
+      text-align: left;
+      float: left;
+    }
+
+    .credit {
+      text-align: right;
+      float: right;
+    }
+  }
+}
