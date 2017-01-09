@@ -1,6 +1,6 @@
 {
   "name": "yourfightsite-cms-bootstrap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bootstrap 3-based starter kit for Your Fight Site CMS themes.",
   "main": "src/theme.scss",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "Martin Bean <martin@yourfightsite.com>",
   "license": "UNLICENSED",
   "homepage": "http://cms.yourfightsite.com/",
-  "devDependencies": {
+  "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "gulp": "^3.9.1",
     "jquery": "^3.1.1",
