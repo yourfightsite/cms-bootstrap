@@ -1,1 +1,36 @@
-//
+.alert,
+.media-body,
+.modal-body,
+.panel-body,
+.well {
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.help-block {
+  font-size: $font-size-small;
+}
+
+.checkbox,
+.radio {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-header:first-child,
+.page-title {
+  margin-top: 0;
+}
+
+.pager,
+.pagination {
+  display: block;
+  margin-top: 0;
+  overflow: auto;
+}
