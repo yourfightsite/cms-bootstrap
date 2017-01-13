@@ -1,0 +1,14 @@
+.list-social {
+  @extend .list-inline;
+  @include clearfix;
+
+  > li {
+    display: block;
+    float: left;
+    vertical-align: baseline;
+
+    > .fb_iframe_widget > span[style] {
+      vertical-align: baseline !important;
+    }
+  }
+}
