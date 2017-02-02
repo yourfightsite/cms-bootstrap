@@ -8,6 +8,10 @@
   }
 }
 
+.embed-responsive-70by99 {
+  padding-bottom: percentage(99 / 70);
+}
+
 .help-block {
   font-size: $font-size-small;
 }
