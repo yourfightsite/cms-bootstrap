@@ -1,6 +1,10 @@
 // Body
 $body-bg: #f5f8fa !default;
 
+// Links
+$link-hover-color: #fff;
+$link-hover-decoration: none;
+
 // Borders
 $laravel-border-color: darken($body-bg, 10%) !default;
 $list-group-border: $laravel-border-color !default;
