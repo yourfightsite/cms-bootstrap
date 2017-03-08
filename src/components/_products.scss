@@ -1,1 +1,51 @@
-//
+// Product listing
+.product-list {
+  @include list-unstyled;
+  @include make-row;
+}
+
+.product-list-item {
+  @include make-xs-column(6);
+  margin-bottom: $line-height-computed;
+
+  @media (min-width: $screen-sm-min) {
+    @include make-sm-column(4);
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      .thumbnail {
+        border-color: $link-color;
+      }
+    }
+  }
+
+  .product-image {
+    margin-bottom: $line-height-computed / 2;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+    display: block;
+  }
+
+  .product-name {
+    height: $line-height-computed * 2;
+    margin-bottom: $line-height-computed / 4;
+    overflow: hidden;
+  }
+
+  .product-price {
+    font-weight: bold;
+  }
+}
+
+// Product details
+.product {
+  .product-price {
+    font-size: $font-size-large;
+    margin-bottom: $line-height-computed;
+  }
+}

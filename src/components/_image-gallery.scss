@@ -1,0 +1,12 @@
+.image-gallery-thumbnail {
+  margin-bottom: $line-height-computed / 2;
+}
+
+.image-gallery-list {
+  @include list-unstyled;
+  @include make-row(10px);
+
+  &-item {
+    @include make-xs-column(4, 10px);
+  }
+}
