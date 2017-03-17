@@ -1,6 +1,6 @@
 {
   "name": "yourfightsite-cms-bootstrap",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Bootstrap 3-based starter kit for Your Fight Site CMS themes.",
   "main": "src/theme.scss",
   "scripts": {

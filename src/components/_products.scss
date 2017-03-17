@@ -44,8 +44,21 @@
 
 // Product details
 .product {
+  .product-name {
+    margin-bottom: $line-height-computed;
+  }
+
   .product-price {
     font-size: $font-size-large;
     margin-bottom: $line-height-computed;
+  }
+
+  .product-images-thumbnails {
+    @include list-unstyled();
+    @include make-row(20px);
+
+    > li {
+      @include make-xs-column(4, 20px);
+    }
   }
 }
