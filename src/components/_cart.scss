@@ -1,10 +1,25 @@
-.cart-items {
-  dt {
-    float: left;
-    clear: left;
+.panel-sidebar-cart-items {
+  @include list-unstyled;
+
+  > li {
+    @include clearfix;
   }
 
-  dd {
-    text-align: right;
+  .panel-sidebar-cart-items-total {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid $hr-border;
+  }
+
+  .item-description {
+    float: left;
+  }
+
+  .item-name {
+    font-weight: bold;
+  }
+
+  .item-total {
+    float: right;
   }
 }
