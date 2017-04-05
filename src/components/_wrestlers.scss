@@ -26,3 +26,43 @@
   font-size: $font-size-h2;
   margin-top: 0;
 }
+
+.wrestler-articles {
+  &-list {
+    @include list-unstyled;
+    @include make-row;
+
+    &-item {
+      @include make-xs-column(12);
+      margin-bottom: $panel-body-padding;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        @include make-sm-column(4);
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-image {
+    display: block;
+    width: 30%;
+    margin-right: $panel-body-padding;
+    margin-bottom: 0;
+    float: left;
+
+    @media (min-width: $screen-sm-min) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: $line-height-computed / 2;
+      float: none;
+    }
+  }
+
+  &-headline {
+    display: block;
+  }
+}
