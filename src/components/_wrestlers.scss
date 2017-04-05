@@ -27,6 +27,10 @@
   margin-top: 0;
 }
 
+.wrestler-statistics {
+  margin-bottom: 0;
+}
+
 .wrestler-articles {
   &-list {
     @include list-unstyled;
