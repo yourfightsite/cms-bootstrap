@@ -1,1 +1,28 @@
-//
+.wrestler-list {
+  @include list-unstyled;
+  @include make-row;
+  margin-bottom: 0;
+}
+
+.wrestler-list-item {
+  @include make-xs-column(6);
+
+  @media (min-width: $screen-xs-min) {
+    @include make-xs-column(4);
+  }
+
+  @media (min-width: $screen-lg-min) {
+    @include make-lg-column(3);
+  }
+
+  .wrestler-name {
+    display: block;
+    height: $line-height-computed * 2;
+    overflow: hidden;
+  }
+}
+
+.wrestler-category-name {
+  font-size: $font-size-h2;
+  margin-top: 0;
+}
