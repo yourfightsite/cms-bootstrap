@@ -1,0 +1,22 @@
+.sponsor-list {
+  @include list-unstyled;
+  @include make-row;
+
+  &-item {
+    @include make-xs-column(6);
+
+    @media (min-width: $screen-sm-min) {
+      @include make-sm-column(4);
+    }
+  }
+
+  .caption {
+    text-align: center;
+  }
+
+  .sponsor-name {
+    display: block;
+    height: $line-height-computed * 2;
+    overflow: hidden;
+  }
+}
