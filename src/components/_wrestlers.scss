@@ -41,4 +41,10 @@
     display: block;
     padding: $padding-base-vertical $padding-base-horizontal;
   }
+
+  .wrestler-name {
+    display: block;
+    height: $line-height-computed * 2;
+    overflow: hidden;
+  }
 }
