@@ -2,7 +2,7 @@
 $body-bg: #f5f8fa !default;
 
 // Links
-$link-hover-decoration: none;
+$link-hover-decoration: none !default;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%) !default;
@@ -35,8 +35,12 @@ $input-border: lighten($text-color, 40%) !default;
 $input-border-focus: lighten($brand-primary, 25%) !default;
 $input-color-placeholder: lighten($text-color, 30%) !default;
 
+// Grid system
+$grid-gutter-width: 20px !default;
+
 // Panels
 $panel-default-heading-bg: #fff !default;
+$panel-body-padding: 20px !default;
 
 // Thumbnails
 $thumbnail-bg: #fff !default;

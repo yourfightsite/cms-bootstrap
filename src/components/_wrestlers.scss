@@ -1,72 +1,44 @@
 .wrestler-list {
-  @include list-unstyled;
-  @include make-row;
-  margin-bottom: 0;
+  margin-bottom: $line-height-computed * -1;
 }
 
 .wrestler-list-item {
-  @include make-xs-column(6);
-
-  @media (min-width: $screen-xs-min) {
-    @include make-xs-column(4);
-  }
-
-  @media (min-width: $screen-lg-min) {
-    @include make-lg-column(3);
-  }
-
-  .wrestler-name {
+  a {
     display: block;
-    height: $line-height-computed * 2;
-    overflow: hidden;
-  }
-}
+    margin-bottom: $line-height-computed;
 
-.wrestler-category-name {
-  font-size: $font-size-h2;
-  margin-top: 0;
-}
-
-.wrestler-statistics {
-  margin-bottom: 0;
-}
-
-.wrestler-articles {
-  &-list {
-    @include list-unstyled;
-    @include make-row;
-
-    &-item {
-      @include make-xs-column(12);
-      margin-bottom: $panel-body-padding;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      @media (min-width: $screen-sm-min) {
-        @include make-sm-column(4);
-        margin-bottom: 0;
+    &:hover,
+    &:focus {
+      .wrestler-image-caption {
+        text-decoration: none;
+        background-color: $link-hover-color;
       }
     }
   }
 
-  &-image {
-    display: block;
-    width: 30%;
-    margin-right: $panel-body-padding;
-    margin-bottom: 0;
-    float: left;
+  .wrestler-image {
+    background-color: #eee;
 
-    @media (min-width: $screen-sm-min) {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: $line-height-computed / 2;
-      float: none;
+    &-overlay {
+      color: #fff;
+      font-size: $font-size-small;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: rgba(#000, .6);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: $padding-small-vertical $padding-small-horizontal;
     }
   }
 
-  &-headline {
+  .wrestler-image-caption {
+    color: #fff;
+    font-weight: bold;
+    background-color: $link-color;
     display: block;
+    padding: $padding-base-vertical $padding-base-horizontal;
   }
 }
