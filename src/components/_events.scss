@@ -2,3 +2,25 @@
   line-height: 36px;
   margin-bottom: 0;
 }
+
+.results-section-title {
+  font-size: $font-size-h3;
+  margin-top: 0;
+}
+
+.results-event-list {
+  @include list-unstyled;
+}
+
+.results-event-link {
+  position: relative;
+  display: inline-block;
+  padding-left: 5em;
+}
+
+.results-event-date {
+  font-weight: bold;
+  display: block;
+  margin-left: -5em;
+  float: left;
+}
